@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>The University of California Memory Game</h1>
+    
+    <p>
+      Welcome! Repeat back the pattern by pressing buttons. Do you recognize the school?
+    </p>
+    
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()"> 
+      Stop
+    </button>
+    
+    <p id="clock">Countdown: </p>
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/886bda60-3502-4f44-b878-3a2f898207ce/UCLAlogo.png?v=1648806145934" height ="150" width = "150"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/886bda60-3502-4f44-b878-3a2f898207ce/UCSBlogo.png?v=1648806058155" height ="150" width = "150"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/886bda60-3502-4f44-b878-3a2f898207ce/UCIlogo.png?v=1648806117763" height ="150" width = "150"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/886bda60-3502-4f44-b878-3a2f898207ce/UCSDlogo.png?v=1648806080097" height ="150" width = "200"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/886bda60-3502-4f44-b878-3a2f898207ce/UCSClogo.png?v=1648806108693" height ="150" width = "150"></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/886bda60-3502-4f44-b878-3a2f898207ce/UCRlogo.jpg?v=1648806137158" height ="150" width = "150"></button>
+    </div>
+    
+  </body>
+</html>
